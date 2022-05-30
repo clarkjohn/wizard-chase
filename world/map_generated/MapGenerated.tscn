@@ -1,0 +1,67 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://world/map_generated/floorspikes/FloorSpikesTileSet.tres" type="TileSet" id=1]
+[ext_resource path="res://world/map_generated/floorspikes/FloorSpikes.gd" type="Script" id=2]
+[ext_resource path="res://world/map_generated/wallblades/WallBlades.gd" type="Script" id=3]
+[ext_resource path="res://world/map_generated/wallblades/WallBlades.tres" type="TileSet" id=4]
+[ext_resource path="res://world/map_generated/magicwalls/MagicWalls.gd" type="Script" id=5]
+[ext_resource path="res://world/map_generated/misctreasure/MiscTreasure.tres" type="TileSet" id=6]
+[ext_resource path="res://world/overlay/treasure/coin/CoinAnimatedOneShot.tres" type="Texture" id=7]
+[ext_resource path="res://world/map_generated/magicwalls/MagicWalls.tres" type="TileSet" id=9]
+
+[sub_resource type="TileSet" id=1]
+0/name = "CoinAnimatedConstant.tres 0"
+0/texture = ExtResource( 7 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 20, 20 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[node name="MapGenerated" type="Node"]
+
+[node name="WallBlades" type="TileMap" parent="."]
+tile_set = ExtResource( 4 )
+cell_size = Vector2( 20, 20 )
+cell_quadrant_size = 40
+format = 1
+script = ExtResource( 3 )
+
+[node name="FloorSpikes" type="TileMap" parent="."]
+z_as_relative = false
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 20, 20 )
+cell_quadrant_size = 40
+format = 1
+script = ExtResource( 2 )
+
+[node name="MagicWalls" type="TileMap" parent="."]
+z_index = 2
+z_as_relative = false
+tile_set = ExtResource( 9 )
+cell_size = Vector2( 20, 20 )
+cell_quadrant_size = 40
+format = 1
+script = ExtResource( 5 )
+
+[node name="MiscTreasure" type="TileMap" parent="."]
+position = Vector2( 0, -2 )
+z_index = 1
+tile_set = ExtResource( 6 )
+cell_size = Vector2( 20, 20 )
+cell_quadrant_size = 40
+cell_tile_origin = 2
+format = 1
+
+[node name="AnimateCoin" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 20, 20 )
+cell_quadrant_size = 40
+format = 1

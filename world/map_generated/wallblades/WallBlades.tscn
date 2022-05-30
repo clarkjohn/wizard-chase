@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://world/map_generated/wallblades/WallBlades.gd" type="Script" id=1]
+
+[node name="WallBlades" type="TileMap"]
+z_index = 1
+cell_size = Vector2( 20, 20 )
+cell_quadrant_size = 40
+format = 1
+script = ExtResource( 1 )

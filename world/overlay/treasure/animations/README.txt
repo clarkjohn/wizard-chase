@@ -1,0 +1,1 @@
+See https://github.com/RPicster/Godot-particle-and-vfx-textures

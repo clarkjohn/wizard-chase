@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro FootStep 03.wav-dc5f74535ccd58708be16d2076fd66f1.sample"
+
+[deps]
+
+source_file="res://assets/audio/FreeSFX/GameSFX/FootStep/Retro FootStep 03.wav"
+dest_files=[ "res://.import/Retro FootStep 03.wav-dc5f74535ccd58708be16d2076fd66f1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

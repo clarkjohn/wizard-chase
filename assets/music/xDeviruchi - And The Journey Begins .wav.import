@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/xDeviruchi - And The Journey Begins .wav-234cd5b560f5483f2c242b0a60b20020.sample"
+
+[deps]
+
+source_file="res://assets/music/xDeviruchi - And The Journey Begins .wav"
+dest_files=[ "res://.import/xDeviruchi - And The Journey Begins .wav-234cd5b560f5483f2c242b0a60b20020.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

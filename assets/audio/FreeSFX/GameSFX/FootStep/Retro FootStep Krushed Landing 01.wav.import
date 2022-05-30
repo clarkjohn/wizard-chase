@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro FootStep Krushed Landing 01.wav-653a409aa07c78b6b20039f898d1d113.sample"
+
+[deps]
+
+source_file="res://assets/audio/FreeSFX/GameSFX/FootStep/Retro FootStep Krushed Landing 01.wav"
+dest_files=[ "res://.import/Retro FootStep Krushed Landing 01.wav-653a409aa07c78b6b20039f898d1d113.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://world/overlay/treasure/Treasure.gd" type="Script" id=1]
+[ext_resource path="res://world/overlay/treasure/hover_score_label/MiscTreasureHoverScoreLabel.gd" type="Script" id=2]
+[ext_resource path="res://world/overlay/treasure/hover_score_label/TreasureChestHoverScoreLabel.gd" type="Script" id=3]
+[ext_resource path="res://world/overlay/treasure/hover_score_label/HoverScoreLabel.tscn" type="PackedScene" id=4]
+[ext_resource path="res://world/overlay/treasure/Treasure.tres" type="TileSet" id=5]
+
+[node name="Treasure" type="TileMap"]
+z_index = 1
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 20, 20 )
+cell_quadrant_size = 40
+format = 1
+script = ExtResource( 1 )
+
+[node name="HoverTextCanvasLayer" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="MiscTreasureHoverScoreLabel" parent="HoverTextCanvasLayer" instance=ExtResource( 4 )]
+script = ExtResource( 2 )
+
+[node name="TreasureChestHoverScoreLabel" parent="HoverTextCanvasLayer" instance=ExtResource( 4 )]
+script = ExtResource( 3 )
