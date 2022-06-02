@@ -11,7 +11,6 @@
 [ext_resource path="res://world/overlay/fountain/FountainWater.tres" type="Texture" id=9]
 
 [sub_resource type="AnimatedTexture" id=1]
-flags = 4
 frames = 10
 frame_0/texture = ExtResource( 6 )
 frame_0/delay_sec = 6.5

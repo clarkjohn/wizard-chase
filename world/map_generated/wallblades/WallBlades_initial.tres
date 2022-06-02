@@ -8,7 +8,6 @@
 [ext_resource path="res://world/map_generated/wallblades/WallBlades_4.png" type="Texture" id=6]
 
 [resource]
-flags = 4
 frames = 13
 frame_0/texture = ExtResource( 4 )
 frame_0/delay_sec = 1.0

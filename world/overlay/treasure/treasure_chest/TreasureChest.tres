@@ -5,7 +5,6 @@
 [ext_resource path="res://world/overlay/treasure/treasure_chest/treasure_chest_2.png" type="Texture" id=3]
 
 [resource]
-flags = 4
 frames = 6
 frame_0/texture = ExtResource( 1 )
 frame_0/delay_sec = 5.0

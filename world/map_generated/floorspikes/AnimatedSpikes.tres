@@ -6,7 +6,6 @@
 [ext_resource path="res://world/map_generated/floorspikes/spike_0.png" type="Texture" id=4]
 
 [resource]
-flags = 4
 frames = 6
 fps = 12.4
 frame_0/texture = ExtResource( 4 )

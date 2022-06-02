@@ -6,7 +6,6 @@
 [ext_resource path="res://world/overlay/treasure/coin/coin_3.png" type="Texture" id=4]
 
 [resource]
-flags = 4
 frames = 5
 oneshot = true
 frame_0/texture = ExtResource( 2 )
