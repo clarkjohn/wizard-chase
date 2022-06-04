@@ -27,10 +27,14 @@ Enter the dungeon and collect all the coins to descend to the next level.
 
 ### Enemies:
 
-* Fiend - Chases the wizard and can get aggressive.
-* Ogre - Large and slow.
-* Slime - Always tailing the wizard.
-* Lizard Man - Will try to ambush the wizard.
+Enemies will scatter in different directions, but every few seconds the enemies will have the following AI:
+
+| Enemy      | AI |
+| ---------- | ----------- |
+| Fiend      | 1. Will target the player’s current tile <br />2. When the player gets 85% of the coins on the current level, will always target the player’s current tile
+| Ogre       | Will target the player’s current tile and then retreat if within 3 tiles of the player        |
+| Slime      | Will target the 3rd previous tile, the player was just at |
+| Lizard Man | Will target 3 tiles ahead the current direction the player is facing        |
    
 # Build locally 
 
